@@ -474,8 +474,13 @@ Ensure the default browser behavior of the `hidden` attribute.
 html,
 body {
 	height: 100vh;
-	font-family: 'merryweather';
-	background-color: #000;
+	font-family: 'Alliance No.1', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+		Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+		'Segoe UI Symbol';
+	font-feature-settings: 'ss02' on, 'ss01' on;
+	font-weight: 600 !important;
+	letter-spacing: -0.01em !important;
+	background-color: #040d21;
 }
 
 .webgl {
@@ -489,4 +494,45 @@ section {
 
 .container {
 	height: 100vh;
+}
+.bg-glow {
+	top: 50%;
+	left: 50%;
+	width: 200%;
+	transform: translate(-50%, -50%);
+}
+/* Vector */
+.vector-1 {
+	width: 900px;
+	height: 900px;
+
+	background: conic-gradient(
+		from 130.26deg at 64.69% 56.9%,
+		#043a8a 0deg,
+		#043a8a 127.5deg,
+		rgba(135, 4, 138, 0.430582) 183.75deg,
+		#043a8a 230.62deg,
+		#043a8a 360deg
+	);
+	border-radius: 1000px;
+
+	filter: blur(80px);
+	transform: rotate(163deg);
+}
+.vector-2 {
+	width: 900px;
+	height: 900px;
+
+	background: conic-gradient(
+		from 130.26deg at 64.69% 56.9%,
+		#043a8a 0deg,
+		#043a8a 127.5deg,
+		rgba(135, 4, 138, 0.430582) 183.75deg,
+		#043a8a 230.62deg,
+		#043a8a 360deg
+	);
+	border-radius: 1000px;
+
+	filter: blur(100px);
+	transform: translate(68%, 68%);
 }

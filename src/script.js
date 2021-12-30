@@ -274,7 +274,6 @@ const resolver = {
     'Vendors',
     'Tech installs',
     'Decision makers',
-    'All on Mixrank.',
   ];
   
   let counter = 0;
@@ -283,9 +282,9 @@ const resolver = {
     // Initial position
     offset: 0,
     // Timeout between each random character
-    timeout: 5,
+    timeout: 10,
     // Number of random characters to show
-    iterations: 10,
+    iterations: 7,
     // Random characters to pick from
     characters: ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'x', 'y', 'x', '#', '%', '&', '-', '+', '_', '?', '/', '\\', '='],
     // String to resolve
@@ -305,7 +304,7 @@ const resolver = {
       
       let nextOptions = Object.assign({}, options, {resolveString: strings[counter]});
       resolver.resolve(nextOptions, callback);
-    }, 1000);
+    }, 1500);
   }
   
   resolver.resolve(options, callback);
