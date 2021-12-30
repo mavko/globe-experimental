@@ -516,7 +516,7 @@ section {
 	);
 	border-radius: 1000px;
 
-	filter: blur(80px);
+	filter: blur(120px);
 	transform: rotate(163deg);
 }
 .vector-2 {
