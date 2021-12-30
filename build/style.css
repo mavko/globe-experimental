@@ -1,0 +1,24 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	height: 100vh;
+	font-family: 'merryweather';
+	background-color: #000;
+}
+
+.webgl {
+	outline: none;
+	mix-blend-mode: exclusion;
+}
+
+section {
+	height: 100vh;
+}
+
+.container {
+	height: 100vh;
+}
